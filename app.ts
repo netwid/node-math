@@ -5,6 +5,7 @@ export const PORT = 8000;
 
 app.use(express.json());
 
+// Change for test approve
 app.post('/sum', function(req: express.Request, res: express.Response) {
     const answer: Number = req.body.reduce((a: Number, b: Number) => +a + +b, 0);
     res.send(JSON.stringify({'result': answer}));
