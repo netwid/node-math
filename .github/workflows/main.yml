@@ -23,5 +23,4 @@ jobs:
 
       - name: Test sum
         run: |
-          curl -s -X POST http://localhost:8000/sum -H 'Content-Type: application/json' -d '[2.5, 3.0]' | grep -q '{"result":5.0}'
-  
+          curl -s -X POST http://localhost:8000/sum -H 'Content-Type: application/json' -d '[2.5, 3.0]' | grep -q '{"result":5.5}'
