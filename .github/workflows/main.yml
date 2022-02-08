@@ -19,7 +19,7 @@ jobs:
         run: npm i
 
       - name: Start server
-        run: npm start
+        run: npm start &
 
       - name: Test sum
         run: |
