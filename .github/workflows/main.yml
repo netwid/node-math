@@ -23,5 +23,5 @@ jobs:
 
       - name: Test sum
         run: |
-          curl -X POST https://localhost:8000/sum -H 'Content-Type: application/json' -d '[2.5, 3.0]'
+          curl -X POST http://localhost:8000/sum -H 'Content-Type: application/json' -d '[2.5, 3.0]'
   
