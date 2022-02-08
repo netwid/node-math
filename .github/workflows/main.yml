@@ -31,4 +31,4 @@ jobs:
       
       - name: Test power
         run: |
-          curl -s -X POST http://localhost:8000/product -H 'Content-Type: application/json' -d '[2.5, 3.0]' | grep -q '{"result":15.625}'
+          curl -s -X POST http://localhost:8000/power -H 'Content-Type: application/json' -d '[2.5, 3.0]' | grep -q '{"result":15.625}'
